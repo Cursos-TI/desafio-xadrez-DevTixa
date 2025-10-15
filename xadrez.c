@@ -7,6 +7,8 @@ int main() {
     {
         printf("Direita\n"); // Imprime a direção do movimento
     }
+
+    printf("\n");
     
     // Bispo: While = 5 casas na diagonal
     int i1 = 0;
@@ -16,6 +18,8 @@ int main() {
         printf("Cima, Direita\n"); // Imprime a direção do movimento
         i1++;
     }
+
+    printf("\n");
     
     // Rainha: Do-While = 8 casas para esquerda
     int i2 = 0;
@@ -26,7 +30,20 @@ int main() {
         i2++;
 
     } while (i2 < 8);
-    
+
+    printf("\n");
+
+    // Cavalo: Loop Aninhado = 2 casas para baixo e 1 casa para a esquerda
+    int i = 1;
+
+    while (i--)
+    {
+        for (int i = 0; i < 2; i++)
+        {
+            printf("Baixo\n"); // Imprime "Baixo" duas vezes
+        }
+        printf("Esquerda\n"); //Imprime "Esquerda" duas vezes    
+    }
+     
     return 0;
 }
-
